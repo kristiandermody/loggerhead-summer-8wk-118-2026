@@ -1,10 +1,10 @@
 # Loggerhead Fitness — Project Guide for Claude
 
 ## Project location
-`/Users/kristiandermody/Development/loggerhead-project/Landing Pages/summer-2026-campaign`
+`/Users/kristiandermody/Development/loggerhead/loggerhead-summer-8wk-118-2026`
 
-Parent project root: `/Users/kristiandermody/Development/loggerhead-project`
-GitHub: https://github.com/kristiandermody/loggerhead-summer-2026
+Parent project root: `/Users/kristiandermody/Development/loggerhead`
+GitHub: https://github.com/kristiandermody/loggerhead-summer-8wk-118-2026
 
 ---
 
@@ -80,25 +80,14 @@ Boutique gym — dumbbell rack, bright windows
 
 ## Folder structure
 ```
-loggerhead-project/                            ← parent (DO NOT git init here)
-  logos/                                       ← all logo assets
-    logo_New_roundLHF.jpg                      ← round badge (current)
-    loggerheadfitnesshirez.ai / .eps           ← vector originals
-  Campaigns/
-  Email Marketing/
-  2026 Redesign/
-  archived work/
-  backups/
-
-  Landing Pages/
-    loggerhead-summer-special.html             ← v1 original (dark navy, reference only)
-
-    summer-2026-campaign/                      ← THIS PROJECT (git lives here only)
-      CLAUDE.md                               ← you are here
-      CHANGELOG.md                            ← version history
-      summer-2026-v2-pastel-recolor.html
-      summer-2026-v3-dark-hero.html           ← PRIMARY — presented to client
-      summer-2026-v4-light-hero.html          ← A/B option — presented to client
+loggerhead/                                    ← parent (DO NOT git init here)
+  loggerhead-summer-8wk-118-2026/             ← THIS PROJECT (git lives here only)
+    CLAUDE.md                                 ← you are here
+    CHANGELOG.md                              ← version history
+    summer-2026-v1-dark-original.html
+    summer-2026-v2-pastel-recolor.html
+    summer-2026-v3-dark-hero.html             ← PRIMARY — presented to client
+    summer-2026-v4-light-hero.html            ← A/B option — presented to client
 ```
 
 ---
