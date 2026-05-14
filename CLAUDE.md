@@ -4,6 +4,7 @@
 `/Users/kristiandermody/Development/loggerhead-project/Landing Pages/summer-2026-campaign`
 
 Parent project root: `/Users/kristiandermody/Development/loggerhead-project`
+GitHub: https://github.com/kristiandermody/loggerhead-summer-2026
 
 ---
 
