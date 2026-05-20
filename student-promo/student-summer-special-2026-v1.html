@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Special Summer 2026 — Loggerhead Fitness · Juno Beach</title>
+  <meta name="description" content="3 months for $119. College & high school students welcome. Full gym access and 40+ weekly classes. Loggerhead Fitness — Juno Beach's favorite gym." />
+
+  <!-- Fonts: Fraunces (expressive serif) + Caveat (handwritten) + Plus Jakarta Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,700&family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- START TEMPLATE -->
+  <script type="module" src=https://widgets.wellnessliving.com/store/widget.js></script>
+  <!-- END TEMPLATE -->
+
+  <style>
+    /* ── Reset ────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    img  { max-width: 100%; display: block; }
+    a    { text-decoration: none; color: inherit; }
+
+    /* ── Tokens ───────────────────────────────────────────────── */
+    :root {
+      --cream:      #F7F8FF;
+      --sand:       #ECEFFE;
+      --coral:      rgb(42, 49, 146);
+      --coral-soft: #C8CBF5;
+      --coral-deep: #1D2370;
+      --sky:        rgb(165, 245, 35);
+      --sky-soft:   #E4FBB0;
+      --sky-deep:   #4A7000;
+      --seafoam:    #6B75CC;
+      --seafoam-soft:#D8DAEF;
+      --peach:      #A0A8E8;
+      --lavender:   rgb(165, 245, 35);
+      --lav-soft:   #E4FBB0;
+      --sun:        rgb(165, 245, 35);
+      --charcoal:   #1A1A35;
+      --warm-mid:   #3D4480;
+      --warm-light: #7A80BC;
+
+      --font-serif:  'Fraunces', Georgia, serif;
+      --font-hand:   'Caveat', cursive;
+      --font-body:   'Plus Jakarta Sans', sans-serif;
+
+      --r-sm:  12px;
+      --r-md:  20px;
+      --r-lg:  32px;
+      --r-xl:  48px;
+      --r-full: 9999px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--cream);
+      color: var(--charcoal);
+      overflow-x: hidden;
+    }
+
+    /* ── Utilities ────────────────────────────────────────────── */
+    .wrap { width: 100%; max-width: 700px; margin: 0 auto; padding: 0 22px; }
+
+    /* ── Sticky top nav ───────────────────────────────────────── */
+    .topnav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 900;
+      background: rgba(26, 26, 53, 0.72);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(165,245,35,.15);
+      padding: 10px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .topnav__logo img {
+      height: 48px;
+      width: auto;
+      display: block;
+    }
+
+    .topnav__cta {
+      background: rgb(165, 245, 35);
+      color: #1A1A35;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: .82rem;
+      padding: 9px 18px;
+      border-radius: var(--r-full);
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background .2s, transform .15s;
+      box-shadow: 0 3px 12px rgba(42,49,146,.28);
+    }
+    .topnav__cta:hover { background: #c8f520; transform: translateY(-1px); }
+
+    /* ── Hero ─────────────────────────────────────────────────── */
+    .hero {
+      padding-top: 78px;
+      padding-bottom: 80px;
+      position: relative;
+      overflow: hidden;
+      background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        170deg,
+        rgba(42, 49, 146, 0.28) 0%,
+        rgba(42, 49, 146, 0.55) 38%,
+        rgba(42, 49, 146, 0.85) 60%,
+        rgba(42, 49, 146, 1.00) 76%,
+        rgba(42, 49, 146, 1.00) 100%
+      );
+      z-index: 1;
+    }
+
+    .hero__sun {
+      position: absolute;
+      top: 40px;
+      right: -40px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 40% 40%, rgba(165,245,35,.45), rgba(165,245,35,.1) 55%, transparent 80%);
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .hero__inner {
+      position: relative;
+      z-index: 3;
+      padding: 40px 22px 0;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .eyebrow-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(165, 245, 35, 0.18);
+      color: rgb(165, 245, 35);
+      border: 1px solid rgba(165, 245, 35, 0.4);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: .75rem;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: var(--r-full);
+      margin-bottom: 20px;
+      backdrop-filter: blur(6px);
+    }
+
+    .hero__handwrite {
+      font-family: var(--font-hand);
+      font-size: 1.6rem;
+      color: rgb(165, 245, 35);
+      line-height: 1;
+      margin-bottom: -4px;
+      display: block;
+      transform: rotate(-2deg);
+    }
+
+    .hero__headline {
+      font-family: var(--font-serif);
+      font-size: clamp(2.8rem, 11vw, 5.2rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -.02em;
+      color: #ffffff;
+      margin-bottom: 6px;
+      text-shadow: 0 2px 20px rgba(0,0,0,.2);
+    }
+
+    .hero__headline em {
+      font-style: italic;
+      color: rgb(165, 245, 35);
+    }
+
+    .hero__price-stamp {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 4px;
+      background: var(--sun);
+      color: var(--charcoal);
+      font-family: var(--font-serif);
+      font-weight: 900;
+      font-size: 2.8rem;
+      line-height: 1;
+      padding: 8px 18px 10px;
+      border-radius: var(--r-md);
+      transform: rotate(1.5deg);
+      display: inline-block;
+      margin: 16px 0 20px;
+      box-shadow: 3px 4px 0 rgba(0,0,0,.1);
+    }
+
+    .hero__price-stamp small {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .hero__sub {
+      font-size: 1rem;
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.82);
+      max-width: 360px;
+      margin-bottom: 28px;
+    }
+
+    .hero__ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+
+    .btn-primary {
+      background: var(--coral);
+      color: #fff;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: .95rem;
+      padding: 14px 28px;
+      border-radius: var(--r-full);
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 18px rgba(42,49,146,.32);
+      transition: background .2s, transform .15s, box-shadow .2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-primary:hover { background: var(--coral-deep); transform: translateY(-2px); box-shadow: 0 7px 22px rgba(42,49,146,.4); }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: .9rem;
+      padding: 13px 24px;
+      border-radius: var(--r-full);
+      border: 2px solid rgba(255, 255, 255, 0.35);
+      cursor: pointer;
+      transition: border-color .2s, background .2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      backdrop-filter: blur(6px);
+    }
+    .btn-ghost:hover { border-color: rgba(255,255,255,.7); background: rgba(255,255,255,.2); }
+
+    .hero__proof-strip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      font-size: .78rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: 600;
+      padding-bottom: 40px;
+    }
+
+    .star-row { color: rgb(165, 245, 35); font-size: .9rem; }
+    .proof-dot { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,.35); }
+
+    .wave-divider {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    /* ── Stats row ────────────────────────────────────────────── */
+    .stats-row {
+      background: rgb(42, 49, 146);
+      margin-top: -80px;
+      position: relative;
+      z-index: 10;
+      padding: 84px 22px 28px;
+      border-bottom: 2px solid rgba(165, 245, 35, 0.2);
+    }
+
+    .stats-inner {
+      display: flex;
+      justify-content: space-around;
+      max-width: 700px;
+      margin: 0 auto;
+      gap: 8px;
+    }
+
+    .stat { text-align: center; color: #fff; }
+
+    .stat__num {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .stat__label {
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      opacity: .8;
+      margin-top: 2px;
+    }
+
+    /* ── Offer postcard ───────────────────────────────────────── */
+    .postcard-section {
+      background: var(--sand);
+      padding: 60px 0;
+      position: relative;
+    }
+
+    .postcard {
+      background: #fff;
+      border-radius: var(--r-xl);
+      overflow: hidden;
+      box-shadow: 0 12px 48px rgba(42,49,146,.1), 0 2px 8px rgba(42,49,146,.06);
+      position: relative;
+    }
+
+    .postcard__stripe {
+      height: 8px;
+      background: linear-gradient(90deg, rgb(42,49,146) 0%, #5B65CC 30%, rgb(165,245,35) 55%, #5B65CC 80%, rgb(42,49,146) 100%);
+    }
+
+    .postcard__body { padding: 32px 28px 28px; }
+
+    .section-kicker {
+      font-family: var(--font-hand);
+      font-size: 1.3rem;
+      color: var(--coral);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 5.5vw, 2.6rem);
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -.02em;
+      color: var(--charcoal);
+      margin-bottom: 6px;
+    }
+
+    .section-sub {
+      font-size: .9rem;
+      color: var(--warm-mid);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .include-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .include-chip {
+      background: var(--cream);
+      border: 1.5px solid rgba(42,49,146,.07);
+      border-radius: var(--r-md);
+      padding: 14px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      transition: border-color .2s, transform .2s;
+    }
+    .include-chip:hover { border-color: var(--coral-soft); transform: translateY(-2px); }
+
+    .include-chip__icon { font-size: 1.4rem; }
+
+    .include-chip__title {
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: .82rem;
+      color: var(--charcoal);
+      line-height: 1.25;
+    }
+
+    .include-chip__note {
+      font-size: .72rem;
+      color: var(--warm-light);
+      line-height: 1.4;
+    }
+
+    /* student ID badge chip */
+    .id-notice {
+      background: #E4FBB0;
+      border: 1.5px solid rgba(74,112,0,.2);
+      border-radius: var(--r-md);
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      font-size: .85rem;
+      color: var(--sky-deep);
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .id-notice span { font-size: 1.4rem; flex-shrink: 0; }
+
+    .addon-bar {
+      background: linear-gradient(135deg, #E4FBB0, #D8DAEF);
+      border-radius: var(--r-md);
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .addon-bar__icon { font-size: 1.5rem; flex-shrink: 0; }
+
+    .addon-bar__text {
+      font-size: .85rem;
+      color: var(--charcoal);
+      line-height: 1.5;
+    }
+    .addon-bar__text strong { color: var(--sky-deep); }
+
+    /* ── Pricing ──────────────────────────────────────────────── */
+    .pricing-section {
+      background: var(--sky-soft);
+      padding: 60px 0;
+    }
+
+    .pricing-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .p-card {
+      background: #fff;
+      border-radius: var(--r-lg);
+      padding: 22px 18px;
+      box-shadow: 0 4px 20px rgba(42,49,146,.07);
+      border: 2px solid transparent;
+      position: relative;
+      transition: border-color .2s;
+    }
+
+    @media (min-width: 600px) { .p-card { padding: 26px 24px; } }
+
+    .p-card--highlight {
+      border-color: var(--coral);
+      background: linear-gradient(135deg, #fff 0%, #ECEFFE 100%);
+    }
+
+    .p-card__ribbon {
+      position: absolute;
+      top: -1px; right: 20px;
+      background: var(--coral);
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: .68rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 0 0 var(--r-sm) var(--r-sm);
+    }
+
+    .p-card__top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      gap: 12px;
+    }
+
+    .p-card__name {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      line-height: 1.1;
+    }
+
+    .p-card__name small {
+      display: block;
+      font-family: var(--font-body);
+      font-size: .75rem;
+      font-weight: 500;
+      color: var(--warm-light);
+      margin-top: 3px;
+    }
+
+    .p-card__price {
+      font-family: var(--font-serif);
+      font-size: 2.6rem;
+      font-weight: 900;
+      color: var(--charcoal);
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .p-card__price span {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--warm-light);
+    }
+
+    .p-card__features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .p-card__features li {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-size: .85rem;
+      color: var(--warm-mid);
+    }
+
+    .feat-dot {
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: var(--seafoam-soft);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      font-size: .6rem;
+    }
+
+    .p-card--highlight .feat-dot { background: #E4FBB0; }
+
+    .btn-card {
+      width: 100%;
+      padding: 13px;
+      border-radius: var(--r-full);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: .9rem;
+      cursor: pointer;
+      border: none;
+      transition: all .2s;
+      display: block;
+      text-align: center;
+    }
+
+    .btn-card--solid {
+      background: var(--coral);
+      color: #fff;
+      box-shadow: 0 3px 14px rgba(42,49,146,.28);
+    }
+    .btn-card--solid:hover { background: var(--coral-deep); }
+
+    .btn-card--outline {
+      background: transparent;
+      border: 2px solid rgba(42,49,146,.1);
+      color: var(--charcoal);
+    }
+    .btn-card--outline:hover { border-color: var(--coral-soft); background: var(--cream); }
+
+    /* ── Classes ──────────────────────────────────────────────── */
+    .classes-section {
+      background: var(--cream);
+      padding: 60px 0;
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 22px;
+    }
+
+    .tag-chip {
+      padding: 9px 16px;
+      border-radius: var(--r-full);
+      font-size: .82rem;
+      font-weight: 600;
+      cursor: default;
+      border: none;
+      transition: transform .15s;
+    }
+    .tag-chip:hover { transform: scale(1.04); }
+    .tag-chip:nth-child(3n+1) { background: #E4FBB0; color: #3A6500; }
+    .tag-chip:nth-child(3n+2) { background: #D8DAEF; color: #1D2370; }
+    .tag-chip:nth-child(3n)   { background: #E4FBB0; color: #3A6500; }
+    .tag-chip:nth-child(5)    { background: #C8CBF5; color: #1D2370; }
+    .tag-chip:nth-child(7)    { background: #D8DAEF; color: #2A3192; }
+    .tag-chip:nth-child(9)    { background: #E4FBB0; color: #3A6500; }
+
+    /* ── Features ─────────────────────────────────────────────── */
+    .features-section {
+      background: var(--sand);
+      padding: 60px 0;
+    }
+
+    .feat-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .feat-row {
+      background: #fff;
+      border-radius: var(--r-lg);
+      padding: 20px 22px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 2px 12px rgba(42,49,146,.05);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .feat-row:hover { transform: translateX(4px); box-shadow: 0 4px 20px rgba(42,49,146,.09); }
+
+    .feat-row__bubble {
+      width: 48px; height: 48px;
+      border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .feat-row:nth-child(1) .feat-row__bubble { background: #E4FBB0; }
+    .feat-row:nth-child(2) .feat-row__bubble { background: #D8DAEF; }
+    .feat-row:nth-child(3) .feat-row__bubble { background: #E4FBB0; }
+    .feat-row:nth-child(4) .feat-row__bubble { background: #D8DAEF; }
+    .feat-row:nth-child(5) .feat-row__bubble { background: #E4FBB0; }
+    .feat-row:nth-child(6) .feat-row__bubble { background: #C8CBF5; }
+
+    .feat-row__text h3 {
+      font-family: var(--font-body);
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      margin-bottom: 2px;
+    }
+
+    .feat-row__text p {
+      font-size: .8rem;
+      color: var(--warm-light);
+      line-height: 1.5;
+    }
+
+    /* ── Testimonials ─────────────────────────────────────────── */
+    .testi-section {
+      background: var(--seafoam-soft);
+      padding: 60px 0;
+    }
+
+    .testi-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .testi-bubble {
+      background: #fff;
+      border-radius: var(--r-lg);
+      padding: 22px 20px;
+      box-shadow: 0 2px 14px rgba(42,49,146,.06);
+      position: relative;
+    }
+    .testi-bubble:nth-child(even) { margin-left: 20px; }
+    .testi-bubble:nth-child(odd)  { margin-right: 20px; }
+
+    .testi-bubble__stars {
+      color: var(--sun);
+      font-size: .85rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .testi-bubble__text {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--charcoal);
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .testi-bubble__author {
+      font-size: .75rem;
+      font-weight: 700;
+      color: var(--warm-light);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .testi-bubble::after {
+      content: '"';
+      position: absolute;
+      bottom: 12px; right: 18px;
+      font-family: var(--font-serif);
+      font-size: 4rem;
+      line-height: 1;
+      color: rgba(165,245,35,.35);
+      font-style: italic;
+    }
+
+    /* ── FAQ ──────────────────────────────────────────────────── */
+    .faq-section {
+      background: var(--cream);
+      padding: 60px 0;
+    }
+
+    .faq-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 24px;
+    }
+
+    .faq-row {
+      background: #fff;
+      border-radius: var(--r-md);
+      overflow: hidden;
+      border: 1.5px solid rgba(42,49,146,.06);
+      transition: border-color .2s;
+    }
+    .faq-row:has(.faq-btn.open) { border-color: var(--coral-soft); }
+
+    .faq-btn {
+      width: 100%;
+      background: transparent;
+      border: none;
+      padding: 16px 18px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: .92rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      transition: color .2s;
+    }
+    .faq-btn.open { color: var(--coral-deep); }
+
+    .faq-icon {
+      width: 24px; height: 24px;
+      border-radius: 50%;
+      background: var(--sand);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      font-size: .8rem;
+      transition: background .2s, transform .3s;
+    }
+    .faq-btn.open .faq-icon { background: var(--coral-soft); transform: rotate(45deg); }
+
+    .faq-panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s ease, padding .3s;
+      font-size: .85rem;
+      color: var(--warm-mid);
+      line-height: 1.7;
+      padding: 0 18px;
+    }
+    .faq-panel.open { max-height: 200px; padding: 0 18px 16px; }
+
+    /* ── Final CTA ────────────────────────────────────────────── */
+    .final-section {
+      background: var(--coral);
+      padding: 64px 0 72px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .final-section::before {
+      content: '';
+      position: absolute;
+      bottom: -60px; right: -60px;
+      width: 240px; height: 240px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.1);
+    }
+
+    .final-section::after {
+      content: '';
+      position: absolute;
+      top: -80px; left: -40px;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.07);
+    }
+
+    .final-inner { position: relative; z-index: 1; text-align: center; }
+    .final-inner .section-kicker { color: rgba(255,255,255,.7); }
+
+    .final-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(2.2rem, 7vw, 3.6rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.05;
+      letter-spacing: -.02em;
+      margin-bottom: 12px;
+    }
+    .final-headline em { font-style: italic; color: var(--sun); }
+
+    .final-sub {
+      font-size: .95rem;
+      color: rgba(255,255,255,.75);
+      margin-bottom: 32px;
+      line-height: 1.6;
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .widget-wrap {
+      background: rgba(255,255,255,.12);
+      border-radius: var(--r-xl);
+      padding: 28px 20px;
+      max-width: 560px;
+      margin: 0 auto 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .final-fine {
+      font-size: .72rem;
+      color: rgba(255,255,255,.5);
+      line-height: 1.6;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    /* ── Rainbow wave + lime wave wrappers ───────────────────── */
+    .rainbow-wave-wrap {
+      background: rgb(42, 49, 146);
+      line-height: 0;
+      display: block;
+    }
+
+    .lime-wave-out {
+      background: rgb(165, 245, 35);
+      line-height: 0;
+      display: block;
+    }
+
+    /* ── Countdown urgency banner ─────────────────────────────── */
+    .urgency-banner {
+      background: rgb(165, 245, 35);
+      color: #1A1A35;
+      padding: 14px 22px;
+      text-align: center;
+    }
+
+    .urgency-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .urgency-label {
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: rgba(26, 26, 53, 0.65);
+    }
+
+    .countdown-row { display: flex; align-items: center; gap: 4px; }
+
+    .cd-unit { text-align: center; }
+
+    .cd-num {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 900;
+      line-height: 1;
+      background: rgba(26, 26, 53, 0.1);
+      color: #1A1A35;
+      padding: 3px 9px;
+      border-radius: 6px;
+      min-width: 36px;
+      display: block;
+    }
+
+    .cd-unit small {
+      font-size: .55rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: rgba(26, 26, 53, 0.5);
+      display: block;
+      margin-top: 2px;
+    }
+
+    .cd-sep {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: rgba(26, 26, 53, 0.35);
+      padding-bottom: 10px;
+    }
+
+    /* ── Footer ───────────────────────────────────────────────── */
+    .footer { background: #1A1A35; padding: 28px 22px; }
+
+    .footer__inner {
+      max-width: 700px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
+
+    .footer__logo img { height: 44px; }
+    .footer__address { font-size: .75rem; color: rgba(255,255,255,.35); line-height: 1.7; }
+    .footer__tagline { font-family: var(--font-hand); font-size: 1.1rem; color: rgb(165,245,35); }
+
+    /* ── Reveal animations ────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+    .reveal.in { opacity: 1; transform: none; }
+    .reveal.delay-1 { transition-delay: .1s; }
+    .reveal.delay-2 { transition-delay: .2s; }
+    .reveal.delay-3 { transition-delay: .3s; }
+
+    /* ── Responsive ───────────────────────────────────────────── */
+    @media (max-width: 360px) {
+      .include-grid { grid-template-columns: 1fr; }
+      .p-card__top  { flex-direction: column; gap: 4px; }
+      .p-card__price { font-size: 2rem; }
+    }
+
+    @media (min-width: 361px) {
+      .include-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (min-width: 600px) {
+      .include-grid { grid-template-columns: repeat(3, 1fr); }
+      .pricing-wrap { flex-direction: row; align-items: stretch; }
+      .p-card       { flex: 1; min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ TOP NAV ════════════════════════════════════════════════ -->
+<header class="topnav">
+  <a href="#" class="topnav__logo">
+    <img src="https://loggerheadfitness.com/wp-content/uploads/2021/07/LHF-logo-167.png" alt="Loggerhead Fitness" />
+  </a>
+  <a href="#join" class="topnav__cta">Student Sign Up →</a>
+</header>
+
+<!-- ══ HERO ════════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero__sun"></div>
+
+  <div class="hero__inner">
+
+    <div class="eyebrow-pill">
+      🎓 &nbsp;Student Special · Summer 2026
+    </div>
+
+    <span class="hero__handwrite">college & high school students welcome</span>
+
+    <h1 class="hero__headline">
+      Get Fit.<br>
+      Stay <em>Strong.</em><br>
+      All Summer.
+    </h1>
+
+    <div class="hero__price-stamp">
+      $119 <small>/ 3 months</small>
+    </div>
+
+    <p class="hero__sub">
+      Full gym access + orientation session, and 40+ weekly classes available. Three months to build the habit. Zero long-term contracts, zero excuses.
+    </p>
+
+    <div class="hero__ctas">
+      <a href="#join" class="btn-primary">Claim Your Spot ↓</a>
+      <a href="#offer" class="btn-ghost">See what's included</a>
+    </div>
+
+    <div class="hero__proof-strip">
+      <span class="star-row">★★★★★</span>
+      <span>4.8 / 5 on Google</span>
+      <span class="proof-dot"></span>
+      <span>285+ reviews</span>
+      <span class="proof-dot"></span>
+      <span>#1 in Palm Beach County</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS ════════════════════════════════════════════════════ -->
+<div class="stats-row">
+  <div class="stats-inner">
+    <div class="stat reveal">
+      <div class="stat__num">4.8★</div>
+      <div class="stat__label">Google</div>
+    </div>
+    <div class="stat reveal delay-1">
+      <div class="stat__num">285+</div>
+      <div class="stat__label">Reviews</div>
+    </div>
+    <div class="stat reveal delay-2">
+      <div class="stat__num">40+</div>
+      <div class="stat__label">Classes/wk</div>
+    </div>
+    <div class="stat reveal delay-3">
+      <div class="stat__num">#1</div>
+      <div class="stat__label">Palm Beach</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ RAINBOW WAVE ═════════════════════════════════════════════ -->
+<div class="rainbow-wave-wrap">
+  <svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:90px;">
+    <defs>
+      <linearGradient id="rainbow-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%"   stop-color="rgb(42,49,146)"/>
+        <stop offset="20%"  stop-color="#9BA8F0"/>
+        <stop offset="45%"  stop-color="rgb(165,245,35)"/>
+        <stop offset="80%"  stop-color="#9BA8F0"/>
+        <stop offset="100%" stop-color="rgb(42,49,146)"/>
+      </linearGradient>
+    </defs>
+    <path d="M0 52 C360 88 1080 12 1440 58 L1440 90 L0 90 Z" fill="rgb(165,245,35)"/>
+    <path d="M0 52 C360 88 1080 12 1440 58" fill="none" stroke="url(#rainbow-stroke)" stroke-width="14" stroke-linecap="round" opacity="0.28"/>
+    <path d="M0 52 C360 88 1080 12 1440 58" fill="none" stroke="url(#rainbow-stroke)" stroke-width="3.5" stroke-linecap="round"/>
+  </svg>
+</div>
+
+<!-- ══ URGENCY BANNER ═══════════════════════════════════════════ -->
+<div class="urgency-banner">
+  <div class="urgency-inner">
+    <span class="urgency-label">🎓 Valid student ID required</span>
+    <div class="countdown-row">
+      <div class="cd-unit"><span class="cd-num" id="cd2-days">--</span><small>days</small></div>
+      <span class="cd-sep">:</span>
+      <div class="cd-unit"><span class="cd-num" id="cd2-hrs">--</span><small>hrs</small></div>
+      <span class="cd-sep">:</span>
+      <div class="cd-unit"><span class="cd-num" id="cd2-min">--</span><small>min</small></div>
+      <span class="cd-sep">:</span>
+      <div class="cd-unit"><span class="cd-num" id="cd2-sec">--</span><small>sec</small></div>
+    </div>
+    <span class="urgency-label">Summer offer · activate within 60 days</span>
+  </div>
+</div>
+
+<!-- lime wave out ────────────────────────────────────────────── -->
+<div class="lime-wave-out">
+  <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:50px;">
+    <path d="M0 25 C360 50 1080 0 1440 25 L1440 50 L0 50 Z" fill="#ECEFFE"/>
+  </svg>
+</div>
+
+<!-- ══ OFFER POSTCARD ══════════════════════════════════════════ -->
+<section class="postcard-section" id="offer">
+  <div class="wrap">
+
+    <div class="postcard reveal">
+      <div class="postcard__stripe"></div>
+      <div class="postcard__body">
+        <span class="section-kicker">The Student Special</span>
+        <h2 class="section-title">Everything you need.<br>Nothing you don't.</h2>
+        <p class="section-sub">College and high school students — this one's for you. Three months to build a real habit, at a price that makes sense.</p>
+
+        <div class="id-notice">
+          <span>🪪</span>
+          Valid student ID required at enrollment. College and high school students welcome.
+        </div>
+
+        <div class="include-grid">
+          <div class="include-chip">
+            <div class="include-chip__icon">🏋️</div>
+            <div class="include-chip__title">Full Gym Access</div>
+            <div class="include-chip__note">Cardio equipment & strength training machines</div>
+          </div>
+          <div class="include-chip">
+            <div class="include-chip__icon">🧖</div>
+            <div class="include-chip__title">Sauna & Locker Rooms</div>
+            <div class="include-chip__note">Full amenities — relax and recover right</div>
+          </div>
+          <div class="include-chip">
+            <div class="include-chip__icon">🗺️</div>
+            <div class="include-chip__title">Orientation Session</div>
+            <div class="include-chip__note">One session with a personal trainer to get you dialed in</div>
+          </div>
+          <div class="include-chip">
+            <div class="include-chip__icon">🎟️</div>
+            <div class="include-chip__title">2 Guest Passes</div>
+            <div class="include-chip__note">Bring a friend — two complimentary passes included</div>
+          </div>
+          <div class="include-chip">
+            <div class="include-chip__icon">🎽</div>
+            <div class="include-chip__title">1 FREE SGT or GX Class</div>
+            <div class="include-chip__note">Try a class on us — SGT or Group X, your choice</div>
+          </div>
+          <div class="include-chip">
+            <div class="include-chip__icon">📅</div>
+            <div class="include-chip__title">3 Full Months</div>
+            <div class="include-chip__note">Consecutive months — no freezes, no gimmicks</div>
+          </div>
+        </div>
+
+        <div class="addon-bar">
+          <div class="addon-bar__icon">⚡</div>
+          <div class="addon-bar__text">
+            Want unlimited Group X all summer? Upgrade to <strong>Student + Group X for $189</strong> — that's yoga, HIIT, cycle, Pilates, Zumba, and 38+ classes, every single week.
+          </div>
+        </div>
+
+        <a href="#join" class="btn-primary" style="width:100%; justify-content:center;">
+          Get 3 Months for $119 →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- wave -->
+<svg class="wave-divider" viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="background:var(--sand);">
+  <path d="M0 25 C360 50 1080 0 1440 25 L1440 50 L0 50 Z" fill="#D8DAEF"/>
+</svg>
+
+<!-- ══ PRICING ═════════════════════════════════════════════════ -->
+<section class="pricing-section" id="pricing">
+  <div class="wrap">
+
+    <div class="reveal">
+      <span class="section-kicker">Pick your plan</span>
+      <h2 class="section-title">Simple pricing.<br>No surprises.</h2>
+      <p class="section-sub" style="margin-bottom:28px;">$20 one-time enrollment fee applies to both plans — and counts toward your membership if you stay year-round.</p>
+    </div>
+
+    <div class="pricing-wrap reveal">
+
+      <div class="p-card">
+        <div class="p-card__top">
+          <div class="p-card__name">
+            Student Basic
+            <small>+ $20 enrollment · $139 total</small>
+          </div>
+          <div class="p-card__price">$119<span>/3mo</span></div>
+        </div>
+        <ul class="p-card__features">
+          <li><span class="feat-dot">✓</span>Full gym access (cardio & strength)</li>
+          <li><span class="feat-dot">✓</span>Locker rooms & sauna</li>
+          <li><span class="feat-dot">✓</span>Orientation session with a trainer</li>
+          <li><span class="feat-dot">✓</span>2 complimentary guest passes</li>
+          <li><span class="feat-dot">✓</span>1 FREE SGT or GX class</li>
+          <li><span class="feat-dot">✓</span>Valid student ID required</li>
+        </ul>
+        <a href="#join" class="btn-card btn-card--outline">
+          Choose Basic
+        </a>
+      </div>
+
+      <div class="p-card p-card--highlight">
+        <div class="p-card__ribbon">Best Value</div>
+        <div class="p-card__top">
+          <div class="p-card__name">
+            Student + Group X
+            <small>+ $20 enrollment · $209 total</small>
+          </div>
+          <div class="p-card__price">$189<span>/3mo</span></div>
+        </div>
+        <ul class="p-card__features">
+          <li><span class="feat-dot">✓</span>Everything in Student Basic</li>
+          <li><span class="feat-dot">✓</span><strong>Unlimited GX classes</strong></li>
+          <li><span class="feat-dot">✓</span>Yoga, HIIT, Cycle, Zumba, Pilates</li>
+          <li><span class="feat-dot">✓</span>38+ classes every week</li>
+          <li><span class="feat-dot">✓</span>~$7.50/wk — best value for summer</li>
+        </ul>
+        <a href="#join" class="btn-card btn-card--solid">
+          Choose Full Access
+        </a>
+      </div>
+
+    </div>
+
+    <p class="reveal" style="text-align:center; font-size:.75rem; color:var(--warm-light); margin-top:14px; line-height:1.6;">
+      Students only · Valid student ID required at enrollment · One per person · 3 consecutive months, no freezes · Must activate within 60 days of purchase · All sales final · 3.5% credit card surcharge applies
+    </p>
+
+  </div>
+</section>
+
+<!-- wave -->
+<svg class="wave-divider" viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="background:#D8DAEF;">
+  <path d="M0 25 C360 0 1080 50 1440 25 L1440 50 L0 50 Z" fill="#F7F8FF"/>
+</svg>
+
+<!-- ══ CLASSES ═════════════════════════════════════════════════ -->
+<section class="classes-section">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="section-kicker">Group X classes</span>
+      <h2 class="section-title">40+ reasons to<br>love every week.</h2>
+      <p class="section-sub">Your basic plan includes 1 free GX class. Upgrade to Student + Group X for unlimited access all summer long.</p>
+    </div>
+
+    <div class="tag-cloud reveal">
+      <span class="tag-chip">🧘 Yoga</span>
+      <span class="tag-chip">🚴 Group Cycle</span>
+      <span class="tag-chip">💃 Zumba</span>
+      <span class="tag-chip">🔥 HIIT</span>
+      <span class="tag-chip">🧘 Mat Pilates</span>
+      <span class="tag-chip">💪 Cardio Sculpt</span>
+      <span class="tag-chip">🏋️ Body Sculpt</span>
+      <span class="tag-chip">🤸 Stretch</span>
+      <span class="tag-chip">👟 Line Dancing</span>
+      <span class="tag-chip">🥈 Silver Sneakers</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURES ════════════════════════════════════════════════ -->
+<section class="features-section">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="section-kicker">Why Loggerhead</span>
+      <h2 class="section-title">Boutique gym energy.<br>Real results.</h2>
+    </div>
+
+    <div class="feat-list">
+      <div class="feat-row reveal">
+        <div class="feat-row__bubble">🏋️</div>
+        <div class="feat-row__text">
+          <h3>Top-tier equipment</h3>
+          <p>Full cardio floor, free weights, and strength machines — everything you need, nothing you don't.</p>
+        </div>
+      </div>
+      <div class="feat-row reveal delay-1">
+        <div class="feat-row__bubble">👥</div>
+        <div class="feat-row__text">
+          <h3>Certified trainers who actually care</h3>
+          <p>Functional, corrective, and sport-specific coaching tailored to you — not a script.</p>
+        </div>
+      </div>
+      <div class="feat-row reveal delay-2">
+        <div class="feat-row__bubble">🧖</div>
+        <div class="feat-row__text">
+          <h3>Sauna & full locker rooms</h3>
+          <p>Recover the right way. Clean, well-maintained, and always ready.</p>
+        </div>
+      </div>
+      <div class="feat-row reveal delay-3">
+        <div class="feat-row__bubble">☀️</div>
+        <div class="feat-row__text">
+          <h3>40+ classes every single week</h3>
+          <p>Sunrise yoga to evening HIIT — a class for every mood, energy level, and goal.</p>
+        </div>
+      </div>
+      <div class="feat-row reveal">
+        <div class="feat-row__bubble">🐢</div>
+        <div class="feat-row__text">
+          <h3>Your Juno Beach neighborhood gym</h3>
+          <p>Not a chain. Not a franchise. A real community at Plaza La Mer since day one.</p>
+        </div>
+      </div>
+      <div class="feat-row reveal delay-1">
+        <div class="feat-row__bubble">✨</div>
+        <div class="feat-row__text">
+          <h3>Clean, welcoming, zero intimidation</h3>
+          <p>"Safe, clean, and friendly" — the three words members use most in 285+ reviews.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ════════════════════════════════════════════ -->
+<section class="testi-section">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="section-kicker">Real members</span>
+      <h2 class="section-title">Don't just take<br>our word for it.</h2>
+    </div>
+
+    <div class="testi-grid">
+      <div class="testi-bubble reveal">
+        <div class="testi-bubble__stars">★★★★★</div>
+        <p class="testi-bubble__text">"Clean, friendly, affordable with great classes and instructors! This gym truly feels like a community."</p>
+        <div class="testi-bubble__author">— Google Review</div>
+      </div>
+      <div class="testi-bubble reveal delay-1">
+        <div class="testi-bubble__stars">★★★★★</div>
+        <p class="testi-bubble__text">"The trainers know your name and your goals. You never feel lost — even on your very first day."</p>
+        <div class="testi-bubble__author">— Google Review</div>
+      </div>
+      <div class="testi-bubble reveal delay-2">
+        <div class="testi-bubble__stars">★★★★★</div>
+        <p class="testi-bubble__text">"Best boutique gym in Palm Beach County. The class variety alone is worth it — and the sauna seals the deal."</p>
+        <div class="testi-bubble__author">— Google Review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ═════════════════════════════════════════════════════ -->
+<section class="faq-section">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="section-kicker">Got questions?</span>
+      <h2 class="section-title">We've got<br>easy answers.</h2>
+    </div>
+
+    <div class="faq-stack reveal">
+
+      <div class="faq-row">
+        <button class="faq-btn" onclick="toggleQ(this)">
+          Who is this offer for?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-panel">College and high school students with a valid student ID. Limit one per person. Great for anyone who wants to build or maintain their fitness this summer.</div>
+      </div>
+
+      <div class="faq-row">
+        <button class="faq-btn" onclick="toggleQ(this)">
+          What ID do I need?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-panel">Any valid student ID from a college, university, or high school. You'll present it at the gym when you activate your membership. Your school year may also be requested.</div>
+      </div>
+
+      <div class="faq-row">
+        <button class="faq-btn" onclick="toggleQ(this)">
+          When does my membership start?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-panel">Your membership activates on your first gym visit. You must activate within 60 days of your purchase date. Once started, it runs for 3 consecutive months with no freezes.</div>
+      </div>
+
+      <div class="faq-row">
+        <button class="faq-btn" onclick="toggleQ(this)">
+          Can I add unlimited Group X classes?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-panel">Yes — choose Student + Group X for $189 (3 months). That unlocks 38+ GX classes every week — yoga, Zumba, cycle, Pilates, HIIT, and more. About $7.50/week extra.</div>
+      </div>
+
+      <div class="faq-row">
+        <button class="faq-btn" onclick="toggleQ(this)">
+          Can I add Small Group Training (SGT)?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-panel">Yes — a 10-class SGT pack is available for $120 (saves $70 off regular price). Classes are 50 minutes, capped at 8 people, and offered at three fitness levels. Pack expires in 1 year.</div>
+      </div>
+
+      <div class="faq-row">
+        <button class="faq-btn" onclick="toggleQ(this)">
+          What happens after 3 months?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-panel">No auto-renewal — you're in control. Your $20 enrollment fee counts toward a year-round membership if you decide to stay. We'd love to have you.</div>
+      </div>
+
+      <div class="faq-row">
+        <button class="faq-btn" onclick="toggleQ(this)">
+          Where are you located?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-panel">Plaza La Mer · 901 Donald Ross Rd · Juno Beach, FL 33408. Easy to reach from Jupiter, North Palm Beach, and Palm Beach Gardens.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- contact bar -->
+<div class="contact-bar reveal" style="background:var(--sand); text-align:center; padding:22px 22px; font-family:var(--font-body); font-size:.95rem; color:var(--charcoal); line-height:1.7; border-top:1px solid var(--coral-soft);">
+  <strong>How to reach us?</strong> Call or text us at <a href="tel:5616253011" style="color:var(--coral); font-weight:700;">561-625-3011</a><br>
+  Email us at: <a href="mailto:info@loggerheadfitness.com" style="color:var(--coral); font-weight:700;">info@loggerheadfitness.com</a>
+</div>
+
+<!-- wave -->
+<svg class="wave-divider" viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="background:var(--sand);">
+  <path d="M0 0 C480 50 960 0 1440 30 L1440 50 L0 50 Z" fill="rgb(42,49,146)"/>
+</svg>
+
+<!-- ══ FINAL CTA ════════════════════════════════════════════════ -->
+<section class="final-section" id="join">
+  <div class="final-inner wrap">
+
+    <span class="section-kicker reveal">Student Special — Summer 2026</span>
+    <h2 class="final-headline reveal">
+      Stop waiting.<br>
+      Start <em>moving.</em>
+    </h2>
+    <p class="final-sub reveal">3 months. $119. The habit starts right here.</p>
+
+    <div class="widget-wrap reveal">
+      <!-- WellnessLiving widget — update k_skin when student promo SKU is confirmed -->
+      <wl-store-widget k_business="95010" k_skin="330277" k_location=""></wl-store-widget>
+    </div>
+
+    <p class="final-fine reveal">
+      Students only · Valid student ID required · Must activate within 60 days of purchase · 3 consecutive months, no freezes · All sales final · No refunds · 3.5% credit card surcharge applies<br>
+      901 Donald Ross Rd · Juno Beach, FL 33408 · loggerheadfitness.com
+    </p>
+
+  </div>
+</section>
+
+<!-- ══ FOOTER ══════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__logo">
+      <img src="https://loggerheadfitness.com/wp-content/uploads/2021/07/LHF-logo-167.png" alt="Loggerhead Fitness" />
+    </div>
+    <div class="footer__tagline">voted #1 in Palm Beach County</div>
+    <div class="footer__address">
+      901 Donald Ross Rd · Juno Beach, FL 33408<br>
+      4.8★ Google · 285+ reviews · Serving Jupiter, North Palm Beach & Palm Beach Gardens
+    </div>
+  </div>
+</footer>
+
+<!-- ══ SCRIPTS ═════════════════════════════════════════════════ -->
+<script>
+  // Countdown — Sept 7, 2026 (end of summer)
+  (function() {
+    var end = new Date('2026-09-07T23:59:59');
+    function tick() {
+      var diff = Math.max(0, end - new Date());
+      var d = Math.floor(diff / 86400000);
+      var h = Math.floor((diff % 86400000) / 3600000);
+      var m = Math.floor((diff % 3600000)  / 60000);
+      var s = Math.floor((diff % 60000)    / 1000);
+      var p = function(n){ return String(n).padStart(2,'0'); };
+      document.getElementById('cd2-days').textContent = p(d);
+      document.getElementById('cd2-hrs').textContent  = p(h);
+      document.getElementById('cd2-min').textContent  = p(m);
+      document.getElementById('cd2-sec').textContent  = p(s);
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+
+  // Scroll reveal
+  (function() {
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+  })();
+
+  // FAQ accordion
+  function toggleQ(btn) {
+    var panel  = btn.nextElementSibling;
+    var isOpen = btn.classList.contains('open');
+    document.querySelectorAll('.faq-btn').forEach(function(b) {
+      b.classList.remove('open');
+      b.nextElementSibling.classList.remove('open');
+    });
+    if (!isOpen) { btn.classList.add('open'); panel.classList.add('open'); }
+  }
+</script>
+
+</body>
+</html>
