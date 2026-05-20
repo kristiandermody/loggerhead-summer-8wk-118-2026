@@ -67,7 +67,7 @@ All logo assets live in `/logos/`:
 | Full total | $186 |
 | Retail value callout | $375 |
 
-**Includes:** 2 × 30-min PT sessions · SGT Level 1, 2 or 3 · 39 GX classes to choose from
+**Includes:** 2 × 30-min PT sessions · SGT Level 1, 2 or 3 · 38 GX classes to choose from
 
 ---
 
@@ -86,7 +86,8 @@ loggerhead/                                    ← parent (DO NOT git init here)
     CHANGELOG.md                              ← version history
     summer-2026-v1-dark-original.html
     summer-2026-v2-pastel-recolor.html
-    summer-2026-v3-dark-hero.html             ← PRIMARY — presented to client
+    summer-2026-v3-dark-hero.html             ← reference (pre-client-tweaks)
+    summer-2026-v3b-dark-hero.html           ← LIVE — uploaded to WordPress (May 19)
     summer-2026-v4-light-hero.html            ← A/B option — presented to client
 ```
 

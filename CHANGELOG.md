@@ -4,6 +4,20 @@
 
 ## Summer 2026 Campaign
 
+### [v3b] 2026-05-19 — Client Tweaks (Rick, May 19)
+File: `summer-2026-v3b-dark-hero.html`
+Status: **Live — uploaded to WordPress**
+
+- GX class count corrected: 39 → 38 throughout (5 locations)
+- Hero sub-text updated: "35+ weekly classes · Zero long-term contracts, zero excuses"
+- Pricing card buttons converted from scroll anchors to direct WellnessLiving checkout URLs:
+  - Base Package → `k_id=3667240`
+  - Base + Group X → `k_id=4140196`
+- FAQ contact bar added below accordion: phone 561-625-3011 + email info@loggerheadfitness.com
+- WellnessLiving widget retained at bottom per client request
+
+---
+
 ### [v4] 2026-05-12 — Light Hero
 File: `2026 Landing Pages/summer-2026-v4-light-hero.html`
 Status: **Presented to client — A/B option**
