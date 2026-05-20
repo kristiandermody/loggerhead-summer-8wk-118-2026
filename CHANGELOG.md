@@ -25,7 +25,7 @@ File: `summer-2026-v3b-dark-hero.html`
 Status: **Live — uploaded to WordPress**
 
 - GX class count corrected: 39 → 38 throughout (5 locations)
-- Hero sub-text updated: "35+ weekly classes · Zero long-term contracts, zero excuses"
+- Hero sub-text updated: "38+ weekly classes · Zero long-term contracts, zero excuses"
 - Pricing card buttons converted from scroll anchors to direct WellnessLiving checkout URLs:
   - Base Package → `k_id=3667240`
   - Base + Group X → `k_id=4140196`
@@ -35,8 +35,8 @@ Status: **Live — uploaded to WordPress**
 ---
 
 ### [v4] 2026-05-12 — Light Hero
-File: `2026 Landing Pages/summer-2026-v4-light-hero.html`
-Status: **Presented to client — A/B option**
+File: `summer-2026-v4-light-hero.html`
+Status: **Presented to client — A/B option (on hold, v3b selected as primary)**
 
 - Light-mode hero: cream gradient overlay instead of dark indigo
 - Nav switched from dark-glass `rgba(26,26,53,.72)` → cream-frost `rgba(247,248,255,.88)`
@@ -49,8 +49,8 @@ Status: **Presented to client — A/B option**
 ---
 
 ### [v3] 2026-05-12 — Dark Photo Hero + Pricing Fix
-File: `2026 Landing Pages/summer-2026-v3-dark-hero.html`
-Status: **Presented to client — primary candidate**
+File: `summer-2026-v3-dark-hero.html`
+Status: **Reference only — superseded by v3b**
 
 - Gym photo hero: Unsplash dumbbell rack (`photo-1534438327276-14e5300c3a48`)
 - Indigo gradient overlay, light at top, fully opaque before section edge
