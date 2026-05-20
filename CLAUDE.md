@@ -89,6 +89,9 @@ loggerhead/                                    ← parent (DO NOT git init here)
     summer-2026-v3-dark-hero.html             ← reference (pre-client-tweaks)
     summer-2026-v3b-dark-hero.html           ← LIVE — uploaded to WordPress (May 19)
     summer-2026-v4-light-hero.html            ← A/B option — presented to client
+
+    student-promo/                           ← student campaign (same theme as v3b)
+      student-summer-special-2026-v1.html   ← v1 built May 19 — WL checkout URLs pending
 ```
 
 ---

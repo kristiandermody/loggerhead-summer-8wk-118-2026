@@ -4,6 +4,22 @@
 
 ## Summer 2026 Campaign
 
+### [student-v1] 2026-05-19 — Student Special Landing Page
+File: `student-promo/student-summer-special-2026-v1.html`
+Status: **Built — WellnessLiving checkout URLs pending before launch**
+
+- Same indigo/lime theme as v3b — campaigns designed to run together
+- Student offer: $119 Basic / $189 Basic + Group X (3 months)
+- $20 one-time enrollment fee; valid student ID required at enrollment
+- Includes: full gym access, sauna, orientation session, 2 guest passes, 1 free SGT or GX class
+- GX add-on: unlimited classes for $189 total (~$7.50/wk)
+- 7 student-specific FAQs: eligibility, ID, activation window (60 days), SGT 10-pack ($120), post-membership options
+- Fine print: no freezes, 3 consecutive months, all sales final, 3.5% credit card surcharge
+- All class counts standardised to 38+ throughout both campaigns
+- WellnessLiving widget placeholder — update k_id URLs when Rick provides student SKUs
+
+---
+
 ### [v3b] 2026-05-19 — Client Tweaks (Rick, May 19)
 File: `summer-2026-v3b-dark-hero.html`
 Status: **Live — uploaded to WordPress**
